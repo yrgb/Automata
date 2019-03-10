@@ -10,5 +10,5 @@ This repository is dedicated to examples of (Formal Languages and Automata Theor
 
 <b>Homeworks</b>
 
-[HW1](https://yrgp.github.io/Automata/HW1/RegExp)
+[HW1](https://yrgp.github.io/Automata/HW1/RegExp.html)
 
