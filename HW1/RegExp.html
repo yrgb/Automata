@@ -53,6 +53,12 @@ function checkRE() {
         const str2 = "<span class=foundArray>$&</span>";
         out.innerHTML = ilkStr.replace(expArray,str2);
         let arrays = document.getElementsByClassName('foundArray');
+	    
+	for (const it of arrays) {
+                    if(it.getElementsByClassName('foundString')[0])
+                        it.getElementsByClassName('foundString')[0].classList.remove('foundString');
+                }
+	    
 
     }
 }
