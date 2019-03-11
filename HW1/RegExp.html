@@ -50,7 +50,7 @@ function checkRE() {
 
     if (inp.value) {
         
-        var expString = /(\"|\').*/g;
+        let expString = /(\"|\').*/g;
         const str1 = "<span class=foundString>$&</span>";
         let output = inp.value.replace(expString, str1);
         const expArray = new RegExp('\\[.*\\]', 'g');
