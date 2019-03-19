@@ -10,6 +10,8 @@ This repository is dedicated to examples of (Formal Languages and Automata Theor
 
 [CW3](https://yrgp.github.io/Automata/CW3/RegExp.html)
 
+[CW3](https://yrgp.github.io/Automata/CW4/CFG.html)
+
 <b>Homeworks</b>
 
 [HW1](https://yrgp.github.io/Automata/HW1/RegExp.html)
