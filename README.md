@@ -14,6 +14,9 @@ This repository is dedicated to examples of (Formal Languages and Automata Theor
 
 [CW5](https://yrgp.github.io/Automata/CW5/Expression.html)
 
+[CW5](https://yrgp.github.io/Automata/CW6/PDA.html)
+
+
 <b>Homeworks</b>
 
 [HW1](https://yrgp.github.io/Automata/HW1/RegExp.html)
