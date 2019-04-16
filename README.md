@@ -16,6 +16,9 @@ This repository is dedicated to examples of (Formal Languages and Automata Theor
 
 [CW6](https://yrgp.github.io/Automata/CW6/PDA.html)
 
+[CW7](https://yrgp.github.io/Automata/CW7/microJ3.html)
+
+
 
 <b>Homeworks</b>
 
