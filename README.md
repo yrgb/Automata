@@ -25,3 +25,5 @@ This repository is dedicated to examples of (Formal Languages and Automata Theor
 [HW1](https://yrgp.github.io/Automata/HW1/RegExp.html)
 
 [HW2](https://yrgp.github.io/Automata/HW2/Expression.html)
+
+[HW2](https://yrgp.github.io/Automata/HW3/microJ1.html)
