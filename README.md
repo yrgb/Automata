@@ -4,31 +4,31 @@ This repository is dedicated to examples of (Formal Languages and Automata Theor
 
 <b>Applications</b>
 
-[CW1](https://yrgp.github.io/Automata/CW1/Dfa.html)
+[CW1-DFA](https://yrgp.github.io/Automata/CW1/Dfa.html)
 
-[CW2](https://yrgp.github.io/Automata/CW2/DfaAndNfa.html)
+[CW2-NFA,DFA](https://yrgp.github.io/Automata/CW2/DfaAndNfa.html)
 
-[CW3](https://yrgp.github.io/Automata/CW3/RegExp.html)
+[CW3-RegExp](https://yrgp.github.io/Automata/CW3/RegExp.html)
 
-[CW4](https://yrgp.github.io/Automata/CW4/CFG.html)
+[CW4-CFG For Palindromes](https://yrgp.github.io/Automata/CW4/CFG.html)
 
-[CW5](https://yrgp.github.io/Automata/CW5/Expression.html)
+[CW5-Recursive-descent Parser](https://yrgp.github.io/Automata/CW5/Expression.html)
 
-[CW6](https://yrgp.github.io/Automata/CW6/PDA.html)
+[CW6-Push-down Automaton](https://yrgp.github.io/Automata/CW6/PDA.html)
 
-[CW7](https://yrgp.github.io/Automata/CW7/microJ3.html)
+[CW7-MicroJ3 Implementation](https://yrgp.github.io/Automata/CW7/microJ3.html)
 
 
 
 <b>Homeworks</b>
 
-[HW1](https://yrgp.github.io/Automata/HW1/RegExp.html)
+[HW1-Regular Expression](https://yrgp.github.io/Automata/HW1/RegExp.html)
 
-[HW2](https://yrgp.github.io/Automata/HW2/Expression.html)
+[HW2-Math Operations](https://yrgp.github.io/Automata/HW2/Expression.html)
 
-[HW3](https://yrgp.github.io/Automata/HW3/microJ1.html)
+[HW3-Updating MicroJ1](https://yrgp.github.io/Automata/HW3/microJ1.html)
 
 
 <b>Projects</b>
 
-[Regex](https://yrgp.github.io/Automata/termProject/regex.html)
+[Regular Exepression](https://yrgp.github.io/Automata/termProject/regex.html)
