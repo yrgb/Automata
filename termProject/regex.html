@@ -215,9 +215,9 @@
         <div class="dropdown">
           <select id=menu onChange="setValues()">
             <option>Capital letter word
-            <option>Floating numbers
+            <option>x+letter
             <option>between html tag
-            <option>ipv4 address
+            <option>last letter of each word
             <option>vaild email
             <option>Turkish char
           </select>
@@ -264,9 +264,9 @@
 
     const ptrn = [
       "[A-Z][a-z]*", //Capital letter word
-      "^[-+]?[0-9]*\.?[0-9]+$",     //Floating numbers
+      "x[a-z]",     //x+letter
       "(<([^>]+)>)\\b",    //between html tag
-      "\\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\\b",    //ipv4 address
+      "\\B\\w\\b",    //last letter of each word
       "\\S+[a-z0-9]@[a-z0-9.]+",    //vaild email
       "[ğşçiıöü]"    //Turkish char
 
@@ -274,9 +274,9 @@
     const word =
       [
         "Find words starts with Capital Letter ",
-        "2,4  Find Floating numbers  33  22,33 ",
+        "Excellent expression tax",
         "<p>paragrapgh</p>",
-        "255.255.255.0 ipv4 address",
+        "Hello world from Turkey",
         "prof Akif ma.eyler@gmail.com",
         "Türkçe öğreniyorum",
       ];
