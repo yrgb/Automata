@@ -11,65 +11,306 @@
 
   <title>Regular Expression</title>
 
+  <style>
+    .found {
+      color: #F60;
+    }
+  </style>
 
-<body style="text-align: center">
-<div class="card" style="display: inline-block; margin: 100px auto;max-width: 80%">
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-        aria-selected="true">What is Regex?</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#basicconcepts" role="tab" aria-controls="basicconcepts"
-        aria-selected="false">Basic Concepts</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#patternrules" role="tab" aria-controls="patternrules"
-        aria-selected="false">Pattern Rules</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#regextester" role="tab" aria-controls="regextester"
-        aria-selected="false">Regex Tester</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#references" role="tab" aria-controls="references"
-        aria-selected="false">References</a>
-    </li>
-  </ul>
+<body style="text-align: center ; ">
+  <h1 style="padding: 20px; color: #046565">Regular Expression</h1>
+
+  <div class="card shadow p-3 mb-5 bg-white rounded" style="margin: 20px auto;max-width: 80; width: 70%">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#whatisregex" role="tab" aria-controls="whatisregex"
+          aria-selected="true">What is Regex?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#whyregex" role="tab" aria-controls="whyregex"
+          aria-selected="false">Why Regex?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#patternrules" role="tab" aria-controls="patternrules"
+          aria-selected="false">Pattern Rules</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#regexmethods" role="tab" aria-controls="regexmethods"
+          aria-selected="false">Regex Mehods</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#regextester" role="tab" aria-controls="regextester"
+          aria-selected="false">Regex Tester</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#references" role="tab" aria-controls="references"
+          aria-selected="false">References</a>
+      </li>
+    </ul>
 
 
-  <div class="tab-content" style="height:300px;overflow: scroll;text-overflow:clip;text-align: initial">
-    <div id="home" class="tab-pane fade show active">
-      <h3>What is Regex?</h3>
-      <p>Regular Expressions is a formal language that helps us to design a pattern to find specific parts from a text. It is popular in most of the programming languages for text operations and natural language processing steps. It has a lot of rules for patterns that make possible to find any part of texts. It is also used to check inputs if they are in correct form or not.</p>
+    <div class="tab-content"
+      style="height:400px; overflow: scroll;text-overflow:clip;text-align: initial;">
+      <div id="whatisregex" class="tab-pane fade show active" style=" padding: 20px;">
+        <h3 style="text-align: center; color: darkorange">What is Regex?</h3>
+        <p>Regular Expressions is a formal language that helps us to design a pattern to find specific parts from a
+          text. It is popular in most of the programming languages for text operations and natural language processing
+          steps. It has a lot of rules for patterns that make possible to find any part of texts. It is also used to
+          check inputs if they are in correct form or not.</p>
+
+
+        <div class="card bg-light text-dark">
+          <div class="card-body"> var re = /ab+c/;<br>
+            var re = new RegExp('ab+c');</div>
+        </div>
+
+
+      </div>
+
+        <div id="whyregex" class="tab-pane fade" style=" padding: 20px;">
+          <h3 style="text-align: center; color: darkorange; color: darkorange">Why Regex?</h3>
+
+          <p>Regular expressions (regex or regexp) are extremely useful in extracting information from any text by
+            searching for one or more matches of a specific search pattern (i.e. a specific sequence of ASCII or unicode
+            characters).</p>
+          <p>
+            Fields of application range from validation to parsing/replacing strings, passing through translating data
+            to
+            other formats and web scraping.</p>
+
+
+
+
+        </div>
+        <div id="patternrules" class="tab-pane fade" style="white-space:pre-line;">
+          <h3 style="text-align: center; color: darkorange">Pattern Rules</h3>
+          <p>The phrase regular expressions, and consequently, regexes, is often used to mean the specific, standard
+            textual syntax for representing patterns for matching text. Each character in a regular expression (that is,
+            each character in the string describing its pattern) is either a metacharacter, having a special meaning, or
+            a
+            regular character that has a literal meaning. We told them that there are certain rules for creating
+            patterns.
+            Lets review them in the following subheadings.
+
+            ▪ Modifiers
+            The Modifiers simply specify the search level. In Javascript language it is taken as the 2nd parameter next
+            to
+            pattern.
+            i>> Perform case-insensitive matching
+
+            g>> Bring all matches
+
+            m>> Perform multiline matching
+
+            ▪ Character classes & Brackets
+            [abc] >> a, b, or c (simple class)
+
+            [^abc] >> Any character except a, b, or c (negation)
+
+            [a-zA-Z] >> all letters small and large (but does not contain turkish characters)
+
+            [0-9] >> Between 0 and 9 matches
+
+            (a|b) >> Find any of the alternatives specified
+
+            ▪ Metacharacters
+            . Finds any character
+
+            \w Find a word character
+
+            \W Find a non-word character
+
+            \d Find a digit
+
+            \D Find a non-digit character
+
+            \s Find a whitespace character
+
+            \S Find a non-whitespace character
+
+            ▪ Quantifiers
+            * >> Match zero or more times
+
+            + >> Match one or more times
+
+            ? >> Match zero or one times
+
+            {n} >> Match exactly n times
+
+            {n,m} >> Match from n to m times
+
+          </p>
+        </div>
+
+        <div id="regexmethods" class="tab-pane fade" style=" padding: 20px;">
+          <h3 style="text-align: center; color: darkorange">Regex Methods</h3>
+          <table class="table table-bordered table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Description </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>exec</td>
+                <td>A RegExp method that executes a search for a match in a string. It returns an array of information
+                  or
+                  null on a mismatch.</td>
+              </tr>
+
+              <tr>
+                <td>test</td>
+                <td>A RegExp method that tests for a match in a string. It returns true or false.</td>
+              </tr>
+
+              <tr>
+
+                <td>match</td>
+                <td>A String method that executes a search for a match in a string. It returns an array of information
+                  or
+                  null on a mismatch.</td>
+              </tr>
+              <tr>
+                <td>matchAll</td>
+                <td>
+                  matchAll A String method that returns an iterator containing all of the matches, including capturing
+                  groups.</td>
+
+              </tr>
+              <tr>
+
+                <td>search</td>
+                <td>A String method that tests for a match in a string. It returns the index of the match, or -1 if the
+                  search fails.</td>
+              </tr>
+              <tr>
+
+                <td>replace</td>
+                <td>A String method that executes a search for a match in a string, and replaces the matched substring
+                  with a replacement substring.</td>
+              </tr>
+              <tr>
+
+                <td>split</td>
+                <td>A String method that uses a regular expression or a fixed string to break a string into an array of
+                  substrings.</td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+        </div>
+
+
+        <div id="regextester" class="tab-pane fade" style=" padding: 20px;">
+          <h3 style="text-align: center; color: darkorange">Regex Tester</h3>
+          <P class="blockquote-footer">
+            Try a prepared Regular Expression from the menue or write the pattern yourself
+          </P>
+
+          <div class="dropdown">
+            <select id=menu onChange="setValues()">
+              <option>Capital letter word
+              <option>Floating numbers
+              <option>between html tag
+              <option>ipv4 address
+              <option>vaild email
+              <option>Turkish char
+            </select>
+          </div>
+
+
+
+
+
+          <div class="form-group">
+            <label for="usr">Pattern:</label>
+            <input type="text" class="form-control" id="pat" onKeyUp="checkRE()">
+          </div>
+
+          <div class="form-group">
+            <label for="usr">Text:</label>
+            <input type="text" class="form-control" id="inp" onKeyUp="checkRE()">
+          </div>
+
+          <P>
+            Output:
+          </P>
+
+          <P id="out">
+
+          </P>
+
+        </div>
+        <div id="references" class="tab-pane fade" style="white-space:pre-line; ">
+          <h3 style="text-align: center; color: darkorange">References</h3>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">
+            -developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions </a>
+          <a href="regexone.com">-regexone.com </a>
+          <a href="clipartqueen.com"> -clipartqueen.com </a>
+          <a href="litury.com">-litury.com </a>
+          <a href="stackoverflow.com"> -stackoverflow.com </a>
+
+
+        </div>
+      </div>
     </div>
-    <div id="basicconcepts" class="tab-pane fade">
-      <h3>Basic Concepts</h3>
-      <p>içerik hazırlanıyor...</p>
-    </div>
-    <div id="patternrules" class="tab-pane fade">
-      <h3>Pattern Rules</h3>
-      <p>içerik hazırlanıyor...</p>
-    </div>
-     <div id="regextester" class="tab-pane fade">
-      <h3>Regex Tester</h3>
-      <p>içerik hazırlanıyor...</p>
-    </div>
-     <div id="references" class="tab-pane fade">
-      <h3>References</h3>
-      <p>içerik hazırlanıyor...</p>
-    </div>
-  </div>
-  </div>
+
+    <script>
+      "use strict";
+
+      const ptrn = [
+        "[A-Z][a-z]*", //Capital letter word
+        "^[-+]?[0-9]*\.?[0-9]+$",     //Floating numbers
+        "(<([^>]+)>)\\b",    //between html tag
+        "\\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\\b",    //ipv4 address
+        "\\S+[a-z0-9]@[a-z0-9.]+",    //vaild email
+        "[ğşçiıöü]"    //Turkish char
+
+      ];
+      const word =
+        [
+          "Find words starts with Capital Letter ",
+          "2,4  Find Floating numbers  33  22,33 ",
+          "<p>paragrapgh</p>",
+          "255.255.255.0 ipv4 address",
+          "prof Akif ma.eyler@gmail.com",
+          "Türkçe öğreniyorum",
+        ];
+
+      function setValues() {
+        pat.value = ptrn[menu.selectedIndex];
+        inp.value = word[menu.selectedIndex];
+        checkRE();
+      }
+
+
+      function checkRE() {
+        if (pat.value && inp.value) {
+          const exp = new RegExp(pat.value, 'g');
+          const str = "<span class=found>$&</span>";
+          out.innerHTML = inp.value.replace(exp, str);
+        }
+        if (inp.value == "") {
+          out.innerHTML = "";
+        }
+      }
+    </script>
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-  crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
