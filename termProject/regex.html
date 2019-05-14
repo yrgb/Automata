@@ -86,64 +86,204 @@
       </div>
       <div id="patternrules" class="tab-pane fade">
         <h3 style="text-align: center; color: darkorange">Pattern Rules</h3>
-        <p style="white-space:pre-line; ">The phrase regular expressions, and consequently, regexes, is often used to mean the specific, standard textual syntax for representing patterns for matching text. Each character in a regular expression (that is, each character in the string describing its pattern) is either a metacharacter, having a special meaning, or a regular character that has a literal meaning. We told them that there are certain rules for creating patterns.
-          Lets review them in the following subheadings.
+        <p>The phrase regular expressions, and consequently, regexes, is often used to
+          mean the specific, standard textual syntax for representing patterns for matching text. Each character in a
+          regular expression (that is, each character in the string describing its pattern) is either a metacharacter,
+          having a special meaning, or a regular character that has a literal meaning. We told them that there are
+          certain rules for creating patterns. </p>
+         <b> Lets review them in the following subheadings.</b><br><br>
 
           <span class="badge badge-dark">▪ Modifiers</span>
 
-          The Modifiers simply specify the search level. In Javascript language it is taken as the 2nd parameter next to pattern.
+          <table class="table table-bordered table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Flag</th>
+                <th>Description </th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>i</td>
+                <td>Perform case-insensitive matching.</td>
+              </tr>
+  
+              <tr>
+                <td>g</td>
+                <td>Bring all matches</td>
+              </tr>
+  
+              <tr>
+  
+                <td>m</td>
+                <td>Perform multiline matching</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>Allows . to match newline characters.</td>
+  
+              </tr>
+              <tr>
+  
+                <td>u</td>
+                <td>"unicode"; treat a pattern as a sequence of unicode code points</td>
+              </tr>
+              <tr>
+  
+                <td>y</td>
+                <td>Perform a "sticky" search that matches starting at the current position in the target string.</td>
+              </tr>
+          
+            </tbody>
+          </table>
 
-          i>> Perform case-insensitive matching
+      
 
-          g>> Bring all matches
-
-          m>> Perform multiline matching
-
+          
           <span class="badge badge-danger">▪ Character classes & Brackets</span>
 
-          [abc] >> a, b, or c (simple class)
-
-          [^abc] >> Any character except a, b, or c (negation)
-
-          [a-zA-Z] >> all letters small and large (but does not contain turkish characters)
-
-          [0-9] >> Between 0 and 9 matches
-
-          (a|b) >> Find any of the alternatives specified
+       
+          <table class="table table-bordered table-hover table-striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Description </th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>[abc]</td>
+                <td>a, b, or c (simple class)</td>
+              </tr>
+  
+              <tr>
+                <td>[^abc]</td>
+                <td>Any character except a, b, or c (negation)</td>
+              </tr>
+  
+              <tr>
+  
+                <td>[a-zA-Z]</td>
+                <td>all letters small and large (but does not contain turkish characters)</td>
+              </tr>
+              <tr>
+                <td>[0-9]</td>
+                <td>Between 0 and 9 matches</td>
+  
+              </tr>
+              <tr>
+  
+                <td>(a|b)</td>
+                <td>Find any of the alternatives specified</td>
+              </tr>
+             
+            </tbody>
+          </table>
 
           <span class="badge badge-success">▪ Metacharacters </span>
 
-          . Finds any character
+          <table class="table table-bordered table-hover table-striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Description </th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>.</td>
+                <td>Finds any character</td>
+              </tr>
+  
+              <tr>
+                <td>\w</td>
+                <td>Find a word character</td>
+              </tr>
+  
+              <tr>
+  
+                <td>\W</td>
+                <td>Find a non-word character</td>
+              </tr>
+              <tr>
+                <td>\d</td>
+                <td>Find a digit</td>
 
-          \w Find a word character
+              </tr>
+              <tr>
+  
+                <td>\D</td>
+                <td>Find a non-digit character</td>
+              </tr>
 
-          \W Find a non-word character
+              <tr>
+  
+                <td>\s</td>
+                <td>Find a whitespace character</td>
+              </tr>
 
-          \d Find a digit
+              <tr>
+  
+                <td>\S</td>
+                <td>Find a non-whitespace character</td>
+              </tr>
+             
+            </tbody>
+          </table>
 
-          \D Find a non-digit character
 
-          \s Find a whitespace character
-
-          \S Find a non-whitespace character
 
           <span class="badge badge-primary">▪ Quantifiers</span>
 
-          * >> Match zero or more times
+          <table class="table table-bordered table-hover table-striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Description </th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>*</td>
+                <td>Match zero or more times</td>
+              </tr>
+  
+              <tr>
+                <td>+</td>
+                <td>Match one or more times</td>
+              </tr>
+  
+              <tr>
+  
+                <td>?</td>
+                <td>Match zero or one times</td>
+              </tr>
+              <tr>
+                <td>{n}</td>
+                <td>Match exactly n times</td>
 
-          + >> Match one or more times
+              </tr>
+              <tr>
+  
+                <td>{n,m}</td>
+                <td>Match from n to m times</td>
+              </tr>
 
-          ? >> Match zero or one times
+            
+            </tbody>
+          </table>
 
-          {n} >> Match exactly n times
 
-          {n,m} >> Match from n to m times
-
-        </p>
+       
       </div>
 
       <div id="regexmethods" class="tab-pane fade">
         <h3 style="text-align: center; color: darkorange">Regex Methods</h3>
+
         <table class="table table-bordered table-hover table-striped">
           <thead>
             <tr>
@@ -260,7 +400,6 @@
 
   <script>
     "use strict";
-
     const ptrn = [
       "[A-Z][a-z]*", //Capital letter word
       "x[a-z]",     //x+letter
@@ -268,7 +407,6 @@
       "\\B\\w\\b",    //last letter of each word
       "\\w+@\\w+.com",    //vaild email
       "[ğşçiıöü]"    //Turkish char
-
     ];
     const word =
       [
@@ -279,14 +417,11 @@
         "prof Akif maeyler@gmail.com",
         "Türkçe öğreniyorum",
       ];
-
     function setValues() {
       pat.value = ptrn[menu.selectedIndex];
       inp.value = word[menu.selectedIndex];
       checkRE();
     }
-
-
     function checkRE() {
       if (pat.value && inp.value) {
         const exp = new RegExp(pat.value, 'g');
