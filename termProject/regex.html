@@ -21,6 +21,7 @@
   <h1 style="padding: 20px; color: #046565">Regular Expression</h1>
 
   <div class="card shadow p-3 mb-5 bg-white rounded" style="margin: 20px auto;max-width: 80; width: 70%">
+
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#whatisregex" role="tab" aria-controls="whatisregex"
@@ -93,191 +94,222 @@
           certain rules for creating patterns. </p>
          <b> Lets review them in the following subheadings.</b><br><br>
 
-          <span class="badge badge-dark">▪ Modifiers</span>
 
-          <table class="table table-bordered table-hover table-striped">
-            <thead>
-              <tr>
-                <th>Flag</th>
-                <th>Description </th>
-              </tr>
-            </thead>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"><span class="badge badge-dark">▪ Modifiers</span></a></li>
+    <li><a data-toggle="tab" href="#menu1"><span class="badge badge-danger">▪ Character classes & Brackets</span></a></li>
+    <li><a data-toggle="tab" href="#menu2"><span class="badge badge-success">▪ Metacharacters </span></a></li>
+    <li><a data-toggle="tab" href="#menu3"> <span class="badge badge-primary">▪ Quantifiers</span></a></li>
+  </ul>
+
+
+        <div class="tab-content" >
+          <div id="home" class="tab-pane fade in active">
+            
+     
+            <table class="table table-bordered table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Flag</th>
+                  <th>Description </th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <td>i</td>
+                  <td>Perform case-insensitive matching.</td>
+                </tr>
+    
+                <tr>
+                  <td>g</td>
+                  <td>Bring all matches</td>
+                </tr>
+    
+                <tr>
+    
+                  <td>m</td>
+                  <td>Perform multiline matching</td>
+                </tr>
+                <tr>
+                  <td>s</td>
+                  <td>Allows . to match newline characters.</td>
+    
+                </tr>
+                <tr>
+    
+                  <td>u</td>
+                  <td>"unicode"; treat a pattern as a sequence of unicode code points</td>
+                </tr>
+                <tr>
+    
+                  <td>y</td>
+                  <td>Perform a "sticky" search that matches starting at the current position in the target string.</td>
+                </tr>
+            
+              </tbody>
+            </table>
   
-            <tbody>
-              <tr>
-                <td>i</td>
-                <td>Perform case-insensitive matching.</td>
-              </tr>
+        
   
-              <tr>
-                <td>g</td>
-                <td>Bring all matches</td>
-              </tr>
+
+
+          </div>
+
+
+          <div id="menu1" class="tab-pane fade">
+           
+            
+
+            <table class="table table-bordered table-hover table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Description </th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <td>[abc]</td>
+                  <td>a, b, or c (simple class)</td>
+                </tr>
+    
+                <tr>
+                  <td>[^abc]</td>
+                  <td>Any character except a, b, or c (negation)</td>
+                </tr>
+    
+                <tr>
+    
+                  <td>[a-zA-Z]</td>
+                  <td>all letters small and large (but does not contain turkish characters)</td>
+                </tr>
+                <tr>
+                  <td>[0-9]</td>
+                  <td>Between 0 and 9 matches</td>
+    
+                </tr>
+                <tr>
+    
+                  <td>(a|b)</td>
+                  <td>Find any of the alternatives specified</td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+
+          </div>
+          <div id="menu2" class="tab-pane fade">
+           
+            
+
+
+            <table class="table table-bordered table-hover table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Description </th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <td>.</td>
+                  <td>Finds any character</td>
+                </tr>
+    
+                <tr>
+                  <td>\w</td>
+                  <td>Find a word character</td>
+                </tr>
+    
+                <tr>
+    
+                  <td>\W</td>
+                  <td>Find a non-word character</td>
+                </tr>
+                <tr>
+                  <td>\d</td>
+                  <td>Find a digit</td>
   
-              <tr>
+                </tr>
+                <tr>
+    
+                  <td>\D</td>
+                  <td>Find a non-digit character</td>
+                </tr>
   
-                <td>m</td>
-                <td>Perform multiline matching</td>
-              </tr>
-              <tr>
-                <td>s</td>
-                <td>Allows . to match newline characters.</td>
+                <tr>
+    
+                  <td>\s</td>
+                  <td>Find a whitespace character</td>
+                </tr>
   
-              </tr>
-              <tr>
+                <tr>
+    
+                  <td>\S</td>
+                  <td>Find a non-whitespace character</td>
+                </tr>
+               
+              </tbody>
+            </table>
   
-                <td>u</td>
-                <td>"unicode"; treat a pattern as a sequence of unicode code points</td>
-              </tr>
-              <tr>
+
+
+          </div>
+          <div id="menu3" class="tab-pane fade">
+           
+            
+            <table class="table table-bordered table-hover table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Description </th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <td>*</td>
+                  <td>Match zero or more times</td>
+                </tr>
+    
+                <tr>
+                  <td>+</td>
+                  <td>Match one or more times</td>
+                </tr>
+    
+                <tr>
+    
+                  <td>?</td>
+                  <td>Match zero or one times</td>
+                </tr>
+                <tr>
+                  <td>{n}</td>
+                  <td>Match exactly n times</td>
   
-                <td>y</td>
-                <td>Perform a "sticky" search that matches starting at the current position in the target string.</td>
-              </tr>
-          
-            </tbody>
-          </table>
+                </tr>
+                <tr>
+    
+                  <td>{n,m}</td>
+                  <td>Match from n to m times</td>
+                </tr>
+  
+              
+              </tbody>
+            </table>
+  
+  
+
+
+          </div>
+        </div>
 
       
-
-          
-          <span class="badge badge-danger">▪ Character classes & Brackets</span>
-
-       
-          <table class="table table-bordered table-hover table-striped">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Description </th>
-              </tr>
-            </thead>
-  
-            <tbody>
-              <tr>
-                <td>[abc]</td>
-                <td>a, b, or c (simple class)</td>
-              </tr>
-  
-              <tr>
-                <td>[^abc]</td>
-                <td>Any character except a, b, or c (negation)</td>
-              </tr>
-  
-              <tr>
-  
-                <td>[a-zA-Z]</td>
-                <td>all letters small and large (but does not contain turkish characters)</td>
-              </tr>
-              <tr>
-                <td>[0-9]</td>
-                <td>Between 0 and 9 matches</td>
-  
-              </tr>
-              <tr>
-  
-                <td>(a|b)</td>
-                <td>Find any of the alternatives specified</td>
-              </tr>
-             
-            </tbody>
-          </table>
-
-          <span class="badge badge-success">▪ Metacharacters </span>
-
-          <table class="table table-bordered table-hover table-striped">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Description </th>
-              </tr>
-            </thead>
-  
-            <tbody>
-              <tr>
-                <td>.</td>
-                <td>Finds any character</td>
-              </tr>
-  
-              <tr>
-                <td>\w</td>
-                <td>Find a word character</td>
-              </tr>
-  
-              <tr>
-  
-                <td>\W</td>
-                <td>Find a non-word character</td>
-              </tr>
-              <tr>
-                <td>\d</td>
-                <td>Find a digit</td>
-
-              </tr>
-              <tr>
-  
-                <td>\D</td>
-                <td>Find a non-digit character</td>
-              </tr>
-
-              <tr>
-  
-                <td>\s</td>
-                <td>Find a whitespace character</td>
-              </tr>
-
-              <tr>
-  
-                <td>\S</td>
-                <td>Find a non-whitespace character</td>
-              </tr>
-             
-            </tbody>
-          </table>
-
-
-
-          <span class="badge badge-primary">▪ Quantifiers</span>
-
-          <table class="table table-bordered table-hover table-striped">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Description </th>
-              </tr>
-            </thead>
-  
-            <tbody>
-              <tr>
-                <td>*</td>
-                <td>Match zero or more times</td>
-              </tr>
-  
-              <tr>
-                <td>+</td>
-                <td>Match one or more times</td>
-              </tr>
-  
-              <tr>
-  
-                <td>?</td>
-                <td>Match zero or one times</td>
-              </tr>
-              <tr>
-                <td>{n}</td>
-                <td>Match exactly n times</td>
-
-              </tr>
-              <tr>
-  
-                <td>{n,m}</td>
-                <td>Match from n to m times</td>
-              </tr>
-
-            
-            </tbody>
-          </table>
-
-
+         
        
       </div>
 
@@ -349,7 +381,7 @@
       <div id="regextester" class="tab-pane fade">
         <h3 style="text-align: center; color: darkorange">Regex Tester</h3>
         <P class="blockquote-footer">
-          Try a prepared Regular Expression from the menue or write the pattern yourself(the code with javascript)
+          Try a prepared Regular Expression from the menue or write the pattern yourself (the code with javascript)
         </P>
 
         <div class="dropdown">
@@ -414,7 +446,7 @@
         "Excellent expression tax",
         "<p>paragrapgh</p>",
         "Hello world from Turkey",
-        "prof Akif maeyler@gmail.com",
+        "prof Akif ma.eyler@gmail.com",
         "Türkçe öğreniyorum",
       ];
     function setValues() {
